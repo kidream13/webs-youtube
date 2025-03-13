@@ -3,9 +3,9 @@ import Main from '../components/section/Main'
 
 const today = () => {
   return (
-    <Main>
-    today
-  </Main>
+    <Main title="유튜브 추천" description="유튜브 추천 페이지입니다.">
+      today
+    </Main>
   )
 }
 

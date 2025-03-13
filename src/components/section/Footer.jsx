@@ -2,7 +2,15 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer id='footer' role='contentInfo'>
+      <a href='https://github.com/kidream13'
+          rel='noopenner noreferrer'
+          target='_blank'
+      >
+        GitHub
+      </a>
+
+    </footer>
   )
 }
 

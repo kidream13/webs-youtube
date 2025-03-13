@@ -20,7 +20,7 @@ const Main = lazy(()=> import ('./components/section/Main'));
 const App = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback ={<Main/>}/>
+      <Suspense fallback = {<Main/>}>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/today' element={<Today/>}/>
@@ -35,6 +35,7 @@ const App = () => {
           <Route path='/channel/:searchID' element={<Search/>}/>
           <Route path='/*' element={<Not/>}/>
         </Routes>
+      </Suspense>
     </BrowserRouter>
   )
 }
