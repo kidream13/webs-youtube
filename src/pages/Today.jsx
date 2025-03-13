@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const today = () => {
   return (
-    <div>today</div>
+    <Main>
+    today
+  </Main>
   )
 }
 

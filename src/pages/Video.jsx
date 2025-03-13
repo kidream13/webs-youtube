@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const video = () => {
   return (
-    <div>video</div>
+    <Main>
+    video
+  </Main>
   )
 }
 

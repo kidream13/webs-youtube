@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const not = () => {
   return (
-    <div>not</div>
+    <Main>
+    not
+  </Main>
   )
 }
 
