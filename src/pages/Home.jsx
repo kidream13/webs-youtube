@@ -16,8 +16,8 @@ const home = () => {
       <Movie/>
       <Book/>
       <Anime/>
-      <Portfolio/>
-      <Youtube/>
+      {/* <Portfolio/>
+      <Youtube/> */}
     </Main>
   )
 }

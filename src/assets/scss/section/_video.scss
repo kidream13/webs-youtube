@@ -1,0 +1,22 @@
+.video_inner{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+
+    @media (max-width:1400px){
+        grid-template-columns: repeat(3, 32%);
+        justify-content: space-between;
+    }
+    @media (max-width:1200px){
+        grid-template-columns: repeat(2, 49%);
+        justify-content: space-between;
+    }
+    @media (max-width:800px){
+        grid-template-columns: repeat(1, 100%);
+        justify-content: space-between;
+    }
+}
+
+.video{
+    margin-bottom: 20px;
+}
