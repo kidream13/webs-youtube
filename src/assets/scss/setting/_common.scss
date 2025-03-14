@@ -3,6 +3,7 @@ body{
     color: var(--white);
 }
 
+//섹션 공통 요소
 
 section{
     padding: 40px;
@@ -15,6 +16,17 @@ section{
         font-size: 1.25rem;
         margin-bottom: 1rem;
     }
+}
+
+//섹션 로딩
+
+.isLoading{
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.isLoaded{
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 //마우스 오버 아이콘
