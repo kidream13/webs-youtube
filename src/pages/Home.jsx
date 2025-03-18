@@ -8,6 +8,7 @@ import { BookText } from '../data/book'
 import { AnimeText } from '../data/anime'
 import { musicText } from '../data/music'
 import { todayText } from '../data/Today'
+import { FavoriteText } from '../data/favorite'
 
 const home = () => {
   return (
@@ -17,6 +18,7 @@ const home = () => {
       <VideoSlider videos={movieText} title='🎬추천 영화를 소개합니다.' id='movie'/>
       <VideoSlider videos={BookText} title='📘추천 도서를 소개합니다.' id='book'/>
       <VideoSlider videos={AnimeText} title='💊추천 애니를 소개합니다.' id='anime'/>
+      <VideoSlider videos={FavoriteText} title='✨즐겨찾기한 영상입니다.' id='favorite'/>
 
 
 

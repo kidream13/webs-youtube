@@ -5,9 +5,9 @@ import { useParams } from 'react-router-dom'
 import { fetchFromAPI } from '../utils/api'
 
 const Search =() =>{
-const {searchId} = useParams();
+const {searchID} = useParams();
 
-  //search/123 -> useParams {searchId:"123"} =>이걸 반환한다.
+  //search/123 -> useParams {searchID:"123"} =>이걸 반환한다.
 
   const [videos, setVideos] = useState([]);
   const [nextPageToken, setNextPageToken] = useState(null);
@@ -17,12 +17,12 @@ const {searchId} = useParams();
 
   useEffect(()=>{
     setVideos([]);
-    fetchVideos(searchId);
+    fetchVideos(searchID);
     setLoading(false)
-  },[searchId])
+  },[searchID])
 
   const fetchVideos = (query, pageToken='') => {
-    fetchFromAPI(`search?part=snippet&q${query}&pageToken=${pageToken}`)
+    fetchFromAPI(`search?part=snippet&q=${query}&pageToken=${pageToken}`)
     .then((data)=> {
       setNextPageToken(data.nextPageToken)
       setVideos((prevVideo)=>[...prevVideo, ...data.items])
@@ -34,11 +34,11 @@ const {searchId} = useParams();
 
   const handleLoadMore = () =>{
     if(nextPageToken){
-      fetchVideos(searchId, nextPageToken)
+      fetchVideos(searchID, nextPageToken)
     }
   }
 
-  const searchPageClass = loading ? 'isLoading' : 'isLoaded'
+  const searchPageClass = loading ? 'isLoading' : 'isLoaded';
 
   return (
     <Main title="유튜브 검색페이지" 

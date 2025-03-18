@@ -1,7 +1,7 @@
 import React from 'react'
 import Main from '../components/section/Main'
 import { AnimeText } from '../data/anime'
-import AnimeCard from '../components/video/AnimeCard'
+import VideoCard from '../components/video/VideoCard'
 
 const anime = () => {
   return (
@@ -10,7 +10,7 @@ const anime = () => {
       <section id='animePage'>
         <h2>💊애니 추천 페이지 </h2>
         <div className='video_inner'>
-          <AnimeCard animes={AnimeText}/>
+          <VideoCard videos={AnimeText}/>
         </div>
       </section>
     </Main>

@@ -38,9 +38,9 @@ export const headerMenus =[
         src: "/anime"
     },
     {
-        title: "유튜브 사이트",
+        title: "즐겨 찾기",
         icon: <CiYoutube />,
-        src: "/youtube"
+        src: "/favorite"
     },
 ];
 

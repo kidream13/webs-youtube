@@ -1,7 +1,7 @@
 import React from 'react'
 import Main from '../components/section/Main'
-import BookCard from '../components/video/BookCard'
 import { BookText } from '../data/book'
+import VideoCard from '../components/video/VideoCard'
 
 const book = () => {
   return (
@@ -10,7 +10,7 @@ const book = () => {
       <section id='bookPage'>
         <h2>📘도서 추천 페이지 </h2>
         <div className='video_inner'>
-          <BookCard books={BookText}/>
+          <VideoCard videos={BookText}/>
         </div>
       </section>
     </Main>
